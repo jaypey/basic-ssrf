@@ -13,17 +13,17 @@
       crossorigin="anonymous"
     />
 
-    <title>Hello, world!</title>
+    <title>Convertisseur Sécuritaire!</title>
   </head>
   <body>
     {% for error in get_flashed_messages() %}
     <div class="alert alert-danger" role="alert">{{ error }}</div>
     {% endfor %}
     <div class="container">
-      <h1>Welcome to SSRF.com</h1>
-      <p>We pride ourselves with our in web browser to pdf service</p>
+      <h1>Convertisseur page web vers PDF</h1>
+      <p>Application très sécuritaire de conversion de WEB vers PDF</p>
       <p>
-        Simple paste the website you want below and we will convert it to PDF
+        Rentrez une adresse web:
       </p>
       <form action="/" method="post" class="input-group mb-3">
         <span class="input-group-text" id="basic-addon1">URL</span>
@@ -35,7 +35,7 @@
           aria-label="Url"
           aria-describedby="basic-addon1"
         />
-        <button type="submit" class="btn btn-primary">Convert</button>
+        <button type="submit" class="btn btn-primary">Convertir!</button>
       </form>
     </div>
 

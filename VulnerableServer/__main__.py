@@ -21,6 +21,10 @@ def index():
         __file__), f'temp', f'temp-{uuid4()}.pdf')
 
     try:
+        # if "127.0.0.1" not in url and "localhost" not in url:
+        #     pdfkit.from_url(url, temp_name)
+        # else:
+        #     raise OSError
         pdfkit.from_url(url, temp_name)
     except OSError as e:
         print(f"URL: {url}\nError: {e}")
